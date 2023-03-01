@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".AdminActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/mainFloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#FFFF7F"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/arrow_up_float"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="0dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="45dp"
+        android:backgroundTint="#FFFF7F"
+        android:text="+"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/mainFloatingActionButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addButton"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/movieFloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#FFFF7F"
+        android:clickable="true"
+        android:scaleType="center"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/mainFloatingActionButton"
+        app:layout_constraintStart_toEndOf="@+id/selectedMovieFloatingActionButton"
+        app:layout_constraintTop_toTopOf="@+id/mainFloatingActionButton"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/presence_video_away" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/selectedMovieFloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#FFFF7F"
+        android:clickable="true"
+        android:scaleType="center"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/mainFloatingActionButton"
+        app:layout_constraintStart_toEndOf="@+id/mainFloatingActionButton"
+        app:layout_constraintTop_toTopOf="@+id/mainFloatingActionButton"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/presence_video_away" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/snackFloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#FFFF7F"
+        android:clickable="true"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/movieFloatingActionButton"
+        app:layout_constraintStart_toEndOf="@+id/movieFloatingActionButton"
+        app:layout_constraintTop_toTopOf="@+id/movieFloatingActionButton"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/snack" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/recipFloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:backgroundTint="#FFFF7F"
+        android:clickable="true"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/snackFloatingActionButton"
+        app:layout_constraintTop_toTopOf="@+id/snackFloatingActionButton"
+        app:srcCompat="@drawable/recipe" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/cartFloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FFFF7F"
+        android:clickable="true"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/selectedMovieFloatingActionButton"
+        app:layout_constraintStart_toStartOf="@+id/selectedMovieFloatingActionButton"
+        app:srcCompat="?attr/actionModeCopyDrawable" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
