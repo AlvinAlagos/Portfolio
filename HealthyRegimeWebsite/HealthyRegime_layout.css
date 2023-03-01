@@ -1,0 +1,127 @@
+/* 
+   Filename: HealthyRegime_Layout.css
+
+   Author: Alvin Alagos Eli  
+   Date: 2021-12-13
+
+ */
+
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+body > header > img {
+   display: block;
+   width: 100%;
+   border:3px solid #e68a00;
+}
+
+.container {  
+  width: 100%;
+  height: 100%;
+}
+
+.leftpanel {
+    width: 15%;
+    height: 100%;
+    float: left;
+	bottom:1000px;
+    background-color: black;
+    border-collapse: collapse;
+}
+
+nav.menuHorizontalNavigation {
+	width: 20%;
+	float: left;
+	margin: 0 0 0 1.5%;
+	line-height:5em;
+}
+
+nav.menuHorizontalNavigation li { 	
+   display: block;
+   width: 490%; 
+   float: left;
+}
+
+nav.menuHorizontalNavigation a {	
+   display: block;
+   
+}
+
+nav.menuHorizontalNavigation ul li:first-of-type {
+	background-image: url(homeIcon.jpg);
+	background-size: 30%;
+	background-repeat: no-repeat;
+	background-position: 170px;
+}
+nav.menuHorizontalNavigation ul li:nth-of-type(2){
+	background-image: url(workoutIcon.jpg);
+	background-size: 30%;
+	background-repeat: no-repeat;
+	background-position: 170px;
+}
+
+nav.menuHorizontalNavigation ul li:nth-of-type(3){
+	background-image: url(dietIcon.jpg);
+	background-size: 30%;
+	background-repeat: no-repeat;
+	background-position: 170px;
+}
+
+nav.menuHorizontalNavigation ul li:nth-of-type(4){
+	background-image: url(coachIcon.jpg);
+	background-size: 30%;
+	background-repeat: no-repeat;
+	background-position: 170px;
+}
+
+nav.menuHorizontalNavigation ul li:last-of-type{
+	background-image: url(bmiIcon.jpg);
+	background-size: 30%;
+	background-repeat: no-repeat;
+	background-position: 170px;
+}
+
+nav.menuHorizontalNavigation a:link, 
+nav.menuHorizontalNavigation a:visited {
+   color: white;
+}
+
+nav.menuHorizontalNavigation a:hover, 
+nav.menuHorizontalNavigation a:active {
+   background-color: orange;
+}  
+
+footer {
+   background-image: linear-gradient(to right, black , orange);
+   color: white;
+   clear: left;
+}
+
+footer::after {
+   clear: both;
+   content: "";
+   display: table;
+}
+
+footer > nav.verticalNavigation {
+   float: left;
+   width: 25%;
+}
+
+footer > section#contactInfo {
+   float: left;
+   width: 34%;
+}
+
+p.cInfo, p.openingHours{	
+	font-size:14px;
+	line-height:2em;
+	margin-top: 20px;
+	float:left;
+}
+
+p.openingHours {
+	margin-left: 15px;
+}

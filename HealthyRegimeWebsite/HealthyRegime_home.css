@@ -1,0 +1,48 @@
+/* 
+   Filename: HealthyRegime_Home.css
+
+   Author: Alvin Alagos Eli  
+   Date: 2021-12-13
+
+ */
+
+.middlepanel {
+    width: 85%;
+    height: 100%;
+    float: left;
+    background-color: white;
+    border-collapse: collapse;
+
+}
+
+
+article#middleColumn {
+    width: 90%;
+	float: left;
+	margin: 0 3% 0 3%;
+	
+}
+
+article#middleColumn img{
+	width:30%;
+	float:left;
+	padding:0;
+	margin:0;
+}
+
+
+
+
+article#middleColumn h2{
+	float: left;
+}
+
+article#middleColumn h3{
+	float: left;
+}
+
+article#middleColumn img {
+	width: 100%;
+	margin-top: 100px;
+}
+

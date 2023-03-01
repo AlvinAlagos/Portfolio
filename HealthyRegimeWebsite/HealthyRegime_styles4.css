@@ -1,0 +1,45 @@
+/* 
+   Filename: HealthyRegime_styles4.css
+
+   Author: Alvin Alagos Eli  
+   Date: 2021-12-13
+
+ */
+
+body {
+   color: rgb(0, 0, 0);
+   background-color: black;
+   font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+}
+
+.col1-4 > img{
+	border: 1px solid black;
+}
+.col1-4 > h1{
+	margin-left: 10px;
+	margin-top: 10px;
+	border-bottom: 3px solid black;
+	width: 50%;
+}
+
+.col1-4 > p{
+	line-height: 1.5em;
+	margin-top: 10px;
+}
+
+aside {
+	background-color: rgb(255, 194, 102);
+}
+
+aside > h1{
+	width: 50%;
+	margin-left: 20px;
+	margin-top: 20px;
+	border: 2px double #e68a00;
+	border-radius: 38px;
+}
+
+aside > ul > li {
+	padding-top: 30px;
+}
+

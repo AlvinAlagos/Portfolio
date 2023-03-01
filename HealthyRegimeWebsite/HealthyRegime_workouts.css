@@ -1,0 +1,63 @@
+
+/* 
+   Filename: HealthyRegime_workouts.css
+
+   Author: Alvin Alagos Eli  
+   Date: 2021-12-13
+
+ */
+
+.middlepanel {
+    width: 65%;
+    height: 100%;
+    float: left;
+    background-color: white;
+    border-collapse: collapse;
+	overflow-y: auto;
+}
+
+.rightpanel {
+  width: 20%;
+  height: 100%;
+  position: relative;
+  float: right;
+  background-color: white;
+  border-collapse: collapse;
+}
+
+
+
+
+nav.workoutLinks > ul {
+	list-style: square;
+	margin-left: 15%;
+	margin-top: 30px;
+	line-height: 2em;
+}
+
+article#middleColumn > ul {
+	padding-left:60px;
+	margin-top: 20px;
+}
+
+article#middleColumn > ul > li {
+	margin-top: 10px;
+}
+p{
+	font-size:14px;
+	line-height:2em;
+	margin-top: 20px;
+}
+
+ul.subMuscle {
+	margin-left: 20px;
+}
+
+p.end{
+	margin-bottom:40px;
+}
+
+
+
+
+
